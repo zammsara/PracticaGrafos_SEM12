@@ -42,11 +42,14 @@ class Grafo:
         return any(vecino == v for vecino, _ in self.grafo.get(u, []))
 
     def mostrar_adyacencia(self):
-        print("\n--- Lista de adyacencia del grafo ---")
-        for vertice, vecinos in self.grafo.items():
-            vecinos_str = ", ".join(f"{vecino}(peso={peso})" for vecino, peso in vecinos)
-            print(f"  {vertice} -> {vecinos_str}")
-        print("-------------------------------------")
+        print("\033[94m\n--- Lista de adyacencia del grafo ---\033[0m")  # Azul
+        for vertice, vecinos in grafo.grafo.items():
+            vecinos_str = ", ".join(
+                f"\033[92m{vecino}\033[0m (peso={peso})" for vecino, peso in vecinos
+            )
+            print(f"  \033[96m{vertice}\033[0m → {vecinos_str}")
+        print("\033[94m-------------------------------------\033[0m")
+        print("\033[92mGrafo creado exitosamente.\033[0m")  # Verde
 
     def bfs(self, inicio):
         """
