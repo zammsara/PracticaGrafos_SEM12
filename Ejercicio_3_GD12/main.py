@@ -1,5 +1,5 @@
 from grafo import Grafo
-from funciones import Funciones
+from funciones import Funciones as f
 import os
 
 def limpiar_pantalla():
@@ -29,34 +29,34 @@ def menu():
             continue
         match opcion:
             case 1:
-                Funciones.opcion_agregar_vertice(grafo)
+                f.opcion_agregar_vertice(grafo)
                 limpiar_pantalla()
             case 2:
-                Funciones.opcion_agregar_arista(grafo)
+                f.opcion_agregar_arista(grafo)
                 limpiar_pantalla()
             case 3:
-                Funciones.opcion_consultar_vecinos(grafo)
+                f.opcion_consultar_vecinos(grafo)
                 limpiar_pantalla()
             case 4:
-                Funciones.opcion_verificar_arista(grafo)
+                f.opcion_verificar_arista(grafo)
                 limpiar_pantalla()
             case 5:
-                Funciones.opcion_mostrar_adyacencia(grafo)
+                f.opcion_mostrar_adyacencia(grafo)
                 limpiar_pantalla()
             case 6:
-                Funciones.opcion_bfs(grafo)
+                f.opcion_bfs(grafo)
                 limpiar_pantalla()
             case 7:
-                Funciones.opcion_dfs(grafo)
+                f.opcion_dfs(grafo)
                 limpiar_pantalla()
             case 8:
-                Funciones.opcion_desconexo(grafo)
+                f.opcion_desconexo(grafo)
                 limpiar_pantalla()
             case 9:
-                Funciones.opcion_es_conexo(grafo)
+                f.opcion_es_conexo(grafo)
                 limpiar_pantalla()
             case 10:
-                Funciones.opcion_encontrar_camino(grafo)
+                f.opcion_encontrar_camino(grafo)
                 limpiar_pantalla()
            
             case 0:
