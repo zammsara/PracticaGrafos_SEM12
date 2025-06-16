@@ -8,13 +8,7 @@ Desarrolla y amplía la clase Grafo del ejercicio anterior para incluir algoritm
    - Debe devolver la lista de los vértices en el orden visitado, preferiblemente de forma recursiva.
 3. Realiza pruebas sobre un grafo no dirigido como el del Ejercicio 1, mostrando los recorridos BFS y DFS desde 'A'.
    - Prueba también el comportamiento con un grafo desconexo (ej: agrega un vértice 'F' no conectado).
-4. La solución debe incluir:
-   - Interacción de usuario para crear y manipular el grafo (menú interactivo).
-   - Funciones adicionales para verificación.
-   - Visualización clara de la lista de adyacencia.
-   - Uso del control match-case para el menú (Python 3.10+).
-   - Creación del grafo sin usar funciones nativas avanzadas de Python ni librerías externas de grafos.
-   - Comentarios explicando el propósito del ejercicio y las partes más relevantes del código.
+
 """
 
 from collections import defaultdict, deque
